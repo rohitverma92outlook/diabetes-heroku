@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+    
+<h1>Percentage Probability of having diabetic:</h1>
+    
+<body>
+    {% if prediction[0] == 1  %}
+    <h3>Patient may have moderate to high risk of having Diabetic with {{probabilty[0,1]*100}}% chances.</h3>
+    {% else %}
+    <h3>There is no Diabetic condition found with {{probabilty[0,0]*100}}% chances.</h3>
+    {% endif %}
+</body>
+
+
+</html>
