@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Outcome</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style_outcome.css') }}">
+
+        <!-- <style>
+            body{
+                    background-image: url("/static/image/diabetes-ai.jpg");
+                    background-size: 100%;
+                }
+        </style> -->
+
+    </head>  
+
+    
+    <body>
+        
+        <h1>Percentage Probability of having diabetic:</h1>
+        
+        {% if prediction[0] == 1  %}
+        <h3>Patient may have moderate to high risk of having Diabetic with {{probabilty[0,1]*100}}% chances.😔</h3>
+        {% else %}
+        <h3>There is no Diabetic condition found in Patient.😀</h3>
+        {% endif %}
+
+    </body>
+    <img src="\static\image\healthcare_gif.gif" alt= "healthcare_gif" >
+    
+
+
+</html>
