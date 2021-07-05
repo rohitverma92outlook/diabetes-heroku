@@ -1,1 +1,0 @@
-alert("This page has been reloaded")
